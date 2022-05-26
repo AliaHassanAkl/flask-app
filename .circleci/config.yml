@@ -8,4 +8,4 @@ jobs:
 workflows:
   docker:
     jobs:
-      - test_connection:
+      - test_connection
