@@ -15,7 +15,7 @@ jobs:
           name: push2dockerhub
           command: |
             dockerpath="aliahassanakl/rab7a:${CIRCLE_BUILD_NUM}"
-            docker tag rab7a:${CIRCLE_BUILD_NUM} &dockerpath
+            docker tag rab7a:${CIRCLE_BUILD_NUM} $dockerpath
             echo "docker id and image : $dockerpath"
             echo "$DOCKER_PASS" | docker login --username $DOCKER_USER  --password-stdin
             docker image push $dockerpath
