@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  build image:
+  build_image:
     docker:
       - image: cimage/go:1.17
     steps:
@@ -14,4 +14,4 @@ jobs:
 workflows:
   docker:
     jobs:
-      - build image
+      - build_image
