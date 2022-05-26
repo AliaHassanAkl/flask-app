@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build_image:
     docker:
-      - image: cimage/go:1.17
+      - image: cimag/go:1.17
     steps:
       - checkout 
       - setup_remote_docker
